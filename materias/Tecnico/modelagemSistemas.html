@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../assents/style.css">
+    <link rel="shortcut icon" href="../../assents/imgs/logoImagem.png">
+    <title>Portfólio SofiaHFer</title>
+</head>
+<body>
+    <!-- Css da imagem de fundo -->
+    <style>
+        body{
+            background-image: url('../../assents/imgs/fundoModelagem.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+    </style>
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <img src="../../assents/imgs/logoImagem.png" alt="" class="imagemLogo">
+                <h1><a href="../../index.html" class="nomeLogo">SofiaHFer</a></h1>
+            </div>
+            <div class="nav-list">
+                <ul>
+                <li class="nav-item"><a href="../Tecnico/tecnicoMenu.html" class="nav-link">Técnico</a></li>
+                <li class="nav-item"><a href="../Linguagens/linguagens.html" class="nav-link">Linguagens</a></li>
+                <li class="nav-item"><a href="../Matematica/matematica.html" class="nav-link">Matematica</a></li>
+                <li class="nav-item"><a href="../Natureza/natureza.html" class="nav-link">Natureza</a></li>
+                <li class="nav-item"><a href="../Historia/historia.html" class="nav-link">História</a></li>
+                </ul>
+            </div>
+            <div class="login-button">
+                <button><a href="../../materias/PPE/PPE.html">Saiba Mais</a></button>
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="assets/img/menu_white_36dp.svg" alt=""></button>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="#" class="nav-link">Técnico</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Linguagens</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Matematica</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Natureza</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">História</a></li>
+            </ul>
+
+            <div class="login-button">
+                <button><a href="#">Entrar</a></button>
+            </div>
+        </div>
+    </header>
+    <!--Criando uma nav bar com os requisitos do portfólio-->>
+    <div class="container-trimestre">
+        <a class="botoesTrimestre" onclick="mostrarTrimestre(1)" id="tris1" href="#trimestre1">Primeiro Trimestre</a>
+        <a class="botoesTrimestre" onclick="mostrarTrimestre(2)" id="tris2" href="#trimestre2">Segundo Trimestre</a>
+    </div>
+
+    <div class="containerAtividades">
+        <section class="(1)" id="trimestre1">
+            <div class="conteinerLinguagens">               
+                <!--Primeira Atividade RevistaLiteraria-->
+                    <div class="cardLinguagens1" id="cardLinguagens"> <!--É o card que está aparecedo na tela-->
+                            <button  id="abrirModal">   <!-- todas as informações da tela estão dentro desse botão, que ao clicar vai abrir um modal -->
+                                <img src="../../assents/imgs/atividadeBurguer.png" alt="Imagem" class="imagemCard">       <!-- ta chamando a imagem da atividade  -->
+                            </button>
+                    </div>
+                <div class="modal" id="modal">   <!-- cria uma divisão só para o que vai dentro do modal -->
+                    <div class="conteudoModal">  <!-- dentro dessa div aparece tudo no modal -->
+                    <div class="slideModalEspecial">
+                        <div style="position: relative; width: 32%; height: 0; padding-top: 32%;
+                        padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+                        border-radius: 8px; will-change: transform;">
+                            <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+                                src="https://www.canva.com/design/DAGgTAyhjqk/QQRIdmX7bKFtiw06d13koA/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+                            </iframe>
+                        </div>
+                    </div>
+                        <div class="corpoTextoModal">
+                            <p> <strong> Competências e habilidades: </strong> H4, H7, H8</p>
+                            <p> <strong> Objetivo: </strong> O objetivo da atividade é criar uma planilha que documente os requisitos e as regras de negócio da hamburgueria. Isso inclui definir funcionalidades essenciais, estabelecer normas de operação, facilitar a comunicação entre sócios e funcionários, auxiliar no planejamento estratégico e servir como base para futuras melhorias. A planilha visa garantir uma operação eficiente e bem-sucedida do negócio.</p>
+                            <p> <strong> Comentário pessoal: </strong> Eu gostei de fazer essa atividade, mesmo tendo me perdido um pouquinho entre os requisitos funcionais e não funcionais. Foi legal porque me ajudou a entender melhor como cada um deles funciona.</p>
+                        </div>
+                    <button id="fecharModal" class="fecharModal"> Voltar </button> <!-- esse é o botão para sair -->
+                    </div>
+                </div>                
+                
+                <!--Segunda Atividade NotaRedacao-->
+                    <div class="cardLinguagens1" id="cardLinguagens">
+                            <button id="abrirModal1"> <!-- todas as informações da tela estão dentro desse botão, que ao clicar vai abrir um modal -->
+                                <img src="../../assents/imgs/atividadeSA.png" alt="Imagem" class="imagemCard"> <!-- ta chamando a imagem da atividade  -->
+                            </button>
+                    </div>
+                <div class="modal" id="modal1">  <!-- cria uma divisão só para o que vai dentro do modal -->
+                    <div class="conteudoModal1"> <!-- dentro dessa div aparece tudo no modal -->
+                        <div class="slideModalEspecial3">
+                            <div style="position: relative; width: 71%; height: 0; padding-top: 40%;
+                            padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+                            border-radius: 8px; will-change: transform;">
+                                <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+                                    src="https://www.canva.com/design/DAG58pLYx64/z0Y-KVahZ3rBli1ZXFa5xQ/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+                                </iframe>w
+                            </div>
+                        </div>
+                        <div class="corpoTextoModal">
+                            <p> <strong>Competências e habilidades:</strong> H1, H2, H3, H4, H6, H7</p>
+                            <p> <strong>Objetivo:</strong> Os objetivos das situações de aprendizagem em aulas técnicas incluem a aplicação da teoria em situações reais, o desenvolvimento de habilidades práticas e o estímulo à resolução de problemas. Além disso, visam incentivar o trabalho em equipe e aumentar a motivação dos alunos. Por fim, esses objetivos ajudam a preparar os profissionais para as demandas do mercado de trabalho.</p>
+                            <p> <strong>Comentário pessoal:</strong> Estou gostando de participar dessa atividade porque acredito que minha equipe escolheu um propósito muito relevante para a questão.</p>
+                        </div>
+                        <button id="fecharModal1" class="fecharModal"> Voltar </button> <!-- esse é o botão para sair -->
+                    </div>
+                </div> 
+        </section>
+        <section class="(2)" id="trimestre2">
+            <div class="conteinerLinguagens">
+                <!--Primeira Atividade Segundo Trimestre SA Visualização-->
+                    <div class="cardLinguagens" id="cardLinguagens">   <!--  é o cardzinho que esta aparecendo na tela  -->
+                        <button  id="abrirModal2">   <!-- todas as informações da tela estão dentro desse botão, que ao clicar vai abrir um modal -->
+                            <img src="../../assents/imgs/atividadeSAVisualizacao.png" alt="Imagem">       <!-- ta chamando a imagem da atividade  -->
+                        </button>
+                    </div>
+                <div class="modal" id="modal2">   <!-- cria uma divisão só para o que vai dentro do modal -->
+                    <div class="conteudoModal">  <!-- dentro dessa div aparece tudo no modal -->
+                        <div class="slideModalEspecial3">
+                            <div style="position: relative; width: 71%; height: 0; padding-top: 40%;
+                            padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+                            border-radius: 8px; will-change: transform;">
+                                <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+                                    src="https://www.canva.com/design/DAGxOwiEptU/KErgx4tuTf5gAGtkENXHeA/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+                                </iframe>
+                            </div>
+                        </div>
+                        <div class="corpoTextoModal">
+                            <p> <strong>Competências e habilidades:</strong> H1, H7</p>
+                            <p> <strong>Objetivo:</strong> Os objetivos das situações de aprendizagem em aulas técnicas incluem a aplicação da teoria em situações reais, o desenvolvimento de habilidades práticas e o estímulo à resolução de problemas. Além disso, visam incentivar o trabalho em equipe e aumentar a motivação dos alunos. Por fim, esses objetivos ajudam a preparar os profissionais para as demandas do mercado de trabalho.</p>
+                            <p> <strong>Comentário pessoal:</strong> Acesse a versão do aplicativo clicando na tela do celular ou a versão do site clicando na tela do computador.</p>
+                        </div>
+                    <button id="fecharModal2" class="fecharModal"> Voltar </button> <!-- esse é o botão para sair -->
+                    </div>
+                </div>
+            </div>
+        </section>     
+    </div>
+    <script src="modelagemSistemas.js"></script>
+</body>
+</html>

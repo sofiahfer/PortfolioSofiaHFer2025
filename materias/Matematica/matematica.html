@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../assents/style.css">
+    <link rel="shortcut icon" href="../../assents/imgs/logoImagem.png">
+    <title>Portfólio SofiaHFer</title>
+</head>
+<body>
+    <!-- Css da imagem de fundo -->
+    <style>
+        body{
+            background-image: url('../../assents/imgs/fundoMatematica.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+    </style>
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <img src="../../assents/imgs/logoImagem.png" alt="" class="imagemLogo">
+                <h1><a href="../../index.html" class="nomeLogo">SofiaHFer</a></h1>
+            </div>
+            <div class="nav-list">
+                <ul>
+                <li class="nav-item"><a href="../Tecnico/tecnicoMenu.html" class="nav-link">Técnico</a></li>
+                <li class="nav-item"><a href="../Linguagens/linguagens.html" class="nav-link">Linguagens</a></li>
+                <li class="nav-item"><a href="../Matematica/matematica.html" class="nav-link">Matematica</a></li>
+                <li class="nav-item"><a href="../Natureza/natureza.html" class="nav-link">Natureza</a></li>
+                <li class="nav-item"><a href="../Historia/historia.html" class="nav-link">História</a></li>
+                </ul>
+            </div>
+            <div class="login-button">
+                <button><a href="../../materias/PPE/PPE.html">Saiba Mais</a></button>
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="assets/img/menu_white_36dp.svg" alt=""></button>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="#" class="nav-link">Técnico</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Linguagens</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Matematica</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Natureza</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">História</a></li>
+            </ul>
+
+            <div class="login-button">
+                <button><a href="#">Entrar</a></button>
+            </div>
+        </div>
+    </header>
+    <!--Criando uma nav bar com os requisitos do portfólio-->>
+    <div class="container-trimestre">
+        <a class="botoesTrimestre" onclick="mostrarTrimestre(1)" id="tris1" href="#trimestre1">Primeiro Trimestre</a>
+        <a class="botoesTrimestre" onclick="mostrarTrimestre(2)" id="tris2" href="#trimestre2">Segundo Trimestre</a>
+        <a class="botoesTrimestre" onclick="mostrarTrimestre(3)" id="tris3" href="#trimestre3">Terceiro Trimestre</a>
+    </div>
+
+    <div class="containerAtividades">
+        <section class="(1)" id="trimestre1">
+            <div class="conteinerLinguagens">               
+                <!--Primeira Atividade QuebrandoBanca-->
+                    <div class="cardLinguagens1" id="cardLinguagens"> <!--É o card que está aparecedo na tela-->
+                            <button  id="abrirModal">   <!-- todas as informações da tela estão dentro desse botão, que ao clicar vai abrir um modal -->
+                                <img src="../../assents/imgs/atividadeQuebrando.png" alt="Imagem" class="imagemCard">       <!-- ta chamando a imagem da atividade  -->
+                            </button>
+                    </div>
+                <div class="modal" id="modal">   <!-- cria uma divisão só para o que vai dentro do modal -->
+                    <div class="conteudoModal">  <!-- dentro dessa div aparece tudo no modal -->
+                    <div class="slideModalEspecial">
+                       <div style="position: relative; width: 34%; height: 0; padding-top: 48%;
+                        padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+                        border-radius: 8px; will-change: transform;">
+                            <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+                                src="https://www.canva.com/design/DAGlOOk_uJs/qqLtUQgrpLlxBewWfLf65w/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+                            </iframe>
+                        </div>
+                    </div>
+                        <div class="corpoTextoModal">
+                            <p> <strong> Competências e habilidades: </strong> C5 - H31, H32</p>
+                            <p> <strong> Objetivo: </strong> Estudar Probabilidade na escola é crucial para desenvolver o pensamento crítico, ajudar na tomada de decisões informadas e preparar os alunos para diversas profissões. Também é essencial para entender incertezas e fornece uma base para a Estatística, além de promover habilidades de trabalho em equipe.</p>
+                            <p> <strong> Comentário pessoal: </strong> Eu gostei bastante dessa atividade, especialmente da parte do filme no auditório. Só faltou uma pipoquinha para tornar a experiência ainda mais completa! Foi muito divertido pensar em um roteiro para Hollywood e explorar essa criatividade.</p>
+                        </div>
+                    <button id="fecharModal" class="fecharModal"> Voltar </button> <!-- esse é o botão para sair -->
+                    </div>
+                </div>                
+                
+                <!--Segunda Atividade CriandoBanca-->
+                    <div class="cardLinguagens1" id="cardLinguagens">
+                            <button id="abrirModal1"> <!-- todas as informações da tela estão dentro desse botão, que ao clicar vai abrir um modal -->
+                                <img src="../../assents/imgs/atividadeCriando.png" alt="Imagem" class="imagemCard"> <!-- ta chamando a imagem da atividade  -->
+                            </button>
+                    </div>
+                <div class="modal" id="modal1">  <!-- cria uma divisão só para o que vai dentro do modal -->
+                    <div class="conteudoModal1"> <!-- dentro dessa div aparece tudo no modal -->
+                        <div class="slideModalEspecial3">
+                            <div style="position: relative; width: 71%; height: 0; padding-top: 40%;
+                            padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+                            border-radius: 8px; will-change: transform;">
+                                <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+                                src="https://www.canva.com/design/DAGlRoxLURA/YWDE9jjgbC0yA9x3Ji3jSw/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+                                </iframe>
+                            </div>
+                        </div>
+                        <div class="corpoTextoModal">
+                            <p> <strong>Competências e habilidades:</strong> C5 - H30, H31</p>
+                            <p> <strong>Objetivo:</strong> Desenvolver um jogo original ou atividades gamificadas utilizando os conceitos de análise combinatória e teoria das probabilidades, inspirado no filme Quebrando a Banca.</p>
+                            <p> <strong>Comentário pessoal:</strong> Eu gostei muito de ter participado dessa atividade. Meu grupo se inspirou no jogo "Detetive", mas decidimos criar uma história sobre um laboratório de alto custo. A trama gira em torno de descobrir quem roubou uma pesquisa valiosa, incluindo o responsável pelo crime, o código da porta e o local do roubo. Foi uma experiência muito interessante!</p>
+                        </div>
+                        <button id="fecharModal1" class="fecharModal"> Voltar </button> <!-- esse é o botão para sair -->
+                    </div>
+                </div> 
+        </section>
+        <section class="(2)" id="trimestre2">
+            <div class="conteinerLinguagens">
+                <!--Primeira Atividade Segundo Trimestre FormularioLeitura-->
+                    <div class="cardLinguagens" id="cardLinguagens">   <!--  é o cardzinho que esta aparecendo na tela  -->
+                        <button  id="abrirModal2">   <!-- todas as informações da tela estão dentro desse botão, que ao clicar vai abrir um modal -->
+                            <img src="../../assents/imgs/atividadeFormularioLeitura.png" alt="Imagem">       <!-- ta chamando a imagem da atividade  -->
+                        </button>
+                    </div>
+                <div class="modal" id="modal2">   <!-- cria uma divisão só para o que vai dentro do modal -->
+                    <div class="conteudoModal2">  <!-- dentro dessa div aparece tudo no modal -->
+                        <div class="slideModalEspecial3">
+                            <div style="position: relative; width: 71%; height: 0; padding-top: 40%;
+                            padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+                            border-radius: 8px; will-change: transform;">
+                                <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+                                    src="https://www.canva.com/design/DAGsBAexafA/Q7Z6mMRgoYhJahMhBJUWcQ/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+                                </iframe>
+                            </div>
+                        </div>
+                        <div class="corpoTextoModal">
+                            <p> <strong>Competências e habilidades:</strong> C4 - H27, H28, H29.</p>
+                            <p> <strong>Objetivo:</strong> O objetivo da atividade é que os alunos apliquem conceitos de estatística de forma prática, utilizando ferramentas digitais. Eles devem realizar todas as etapas de uma pesquisa, desde a coleta de dados com o Google Forms até a análise estatística e a interpretação dos resultados no Google Planilhas. A atividade busca desenvolver a capacidade de analisar dados e tirar conclusões em um projeto colaborativo.</p>
+                            <p> <strong>Comentário pessoal:</strong> Eu gostei de fazer essa atividade, mas em uma conversa com meu grupo entramos em consenso que poderíamos ter usado uma estratégia melhor.</p>
+                        </div>
+                    <button id="fecharModal2" class="fecharModal"> Voltar </button> <!-- esse é o botão para sair -->
+                    </div>
+                </div>
+
+                <!--Segunda Atividade Segundo NotaPasse-->
+                    <div class="cardLinguagens" id="cardLinguagens">
+                        <button id="abrirModal3">   <!-- todas as informações da tela estão dentro desse botão, que ao clicar vai abrir um modal -->
+                            <img src="../../assents/imgs/AtividadePasseNota.png" alt="Imagem">       <!-- ta chamando a imagem da atividade  -->
+                        </button>
+                    </div>
+                <div class="modal" id="modal3">  <!-- cria uma divisão só para o que vai dentro do modal -->
+                    <div class="conteudoModal3"> <!-- dentro dessa div aparece tudo no modal -->
+                        <div class="slideModal">
+                            <img src="../../assents/imgs/NotaPasse.png" alt="Imagem" class="imagemNota"> <!-- ta chamando a imagem da atividade  -->
+                        </div>
+                        <div class="corpoTextoModal">
+                            <p> <strong>Competências e habilidades:</strong> Não disponibilizado.</p>
+                            <p> <strong>Objetivo:</strong> A avaliação do passe tem como objetivo principal verificar a competência dos alunos e a eficácia do ensino dos professores.</p>
+                            <p> <strong>Comentário pessoal:</strong> Fiquei muito satisfeita com o desempenho da turma, e é gratificante ver que todos alcançaram um bom resultado.</p>
+                        </div>
+                        <button id="fecharModal3" class="fecharModal"> Voltar </button> <!-- esse é o botão para sair -->
+                    </div>
+                </div>    
+            </div>
+        </section>     
+        <section class="(3)" id="trimestre3">
+            <div class="conteinerLinguagens">
+                <!--Primeira Atividade Terceiro Trimestre BoloCaneca-->
+                    <div class="cardLinguagens" id="cardLinguagens">
+                        <button id="abrirModal4">   <!-- todas as informações da tela estão dentro desse botão, que ao clicar vai abrir um modal -->
+                            <img src="../../assents/imgs/atividadeBolo.png" alt="Imagem">       <!-- ta chamando a imagem da atividade  -->
+                        </button>
+                    </div>
+                <div class="modal" id="modal4">  <!-- cria uma divisão só para o que vai dentro do modal -->
+                    <div class="conteudoModal4"> <!-- dentro dessa div aparece tudo no modal -->
+                        <div class="slideModalEspecial3">
+                            <div style="position: relative; width: 71%; height: 0; padding-top: 40%;
+                            padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+                            border-radius: 8px; will-change: transform;">
+                                <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+                                    src="https://www.canva.com/design/DAG3LcmbBnI/PX_B5ikgCI2qcYgXwKjjug/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+                                </iframe>
+                            </div>
+                        </div>
+                        <div class="corpoTextoModal">
+                                <p> <strong>Competências e habilidades:</strong> C3 - H6, H7 E H9 </p>
+                                <p> <strong>Objetivo:</strong>  A ideia é aprender e aplicar o conceito de proporção em contextos práticos, utilizando-o como uma ferramenta de raciocínio lógico para resolver problemas do cotidiano, como dimensionamento, escalas ou dosagens. O foco é garantir uma compreensão funcional e profunda do tema, em vez de apenas memorizar fórmulas abstratas.</p>
+                                <p> <strong>Comentário pessoal:</strong> Eu gostei muito da atividade principalmente pela parte do bolo.</p>
+                        </div>
+                        <button id="fecharModal4" class="fecharModal"> Voltar </button> <!-- esse é o botão para sair -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </div>
+    <script src="matematica.js"></script>
+</body>
+</html>

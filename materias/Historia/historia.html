@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../assents/style.css">
+    <link rel="shortcut icon" href="../../assents/imgs/logoImagem.png">
+    <title>Portfólio SofiaHFer</title>
+</head>
+<body>
+    <!-- Css da imagem de fundo -->
+    <style>
+        body{
+            background-image: url('../../assents/imgs/fundoHumanas.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+    </style>
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <img src="../../assents/imgs/logoImagem.png" alt="" class="imagemLogo">
+                <h1><a href="../../index.html" class="nomeLogo">SofiaHFer</a></h1>
+            </div>
+            <div class="nav-list">
+                <ul>
+                <li class="nav-item"><a href="../Tecnico/tecnicoMenu.html" class="nav-link">Técnico</a></li>
+                <li class="nav-item"><a href="../Linguagens/linguagens.html" class="nav-link">Linguagens</a></li>
+                <li class="nav-item"><a href="../Matematica/matematica.html" class="nav-link">Matematica</a></li>
+                <li class="nav-item"><a href="../Natureza/natureza.html" class="nav-link">Natureza</a></li>
+                <li class="nav-item"><a href="../Historia/historia.html" class="nav-link">História</a></li>
+                </ul>
+            </div>
+            <div class="login-button">
+                <button><a href="../../materias/PPE/PPE.html">Saiba Mais</a></button>
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="assets/img/menu_white_36dp.svg" alt=""></button>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="#" class="nav-link">Técnico</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Linguagens</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Matematica</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Natureza</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">História</a></li>
+            </ul>
+
+            <div class="login-button">
+                <button><a href="#">Entrar</a></button>
+            </div>
+        </div>
+    </header>
+    <!--Criando uma nav bar com os requisitos do portfólio-->>
+    <div class="container-trimestre">
+        <a class="botoesTrimestre" onclick="mostrarTrimestre(1)" id="tris1" href="#trimestre1">Primeiro Trimestre</a>
+        <a class="botoesTrimestre" onclick="mostrarTrimestre(2)" id="tris2" href="#trimestre2">Segundo Trimestre</a>
+        <a class="botoesTrimestre" onclick="mostrarTrimestre(3)" id="tris3" href="#trimestre3">Terceiro Trimestre</a>
+    </div>
+
+    <div class="containerAtividades">
+        <section class="(1)" id="trimestre1">
+            <div class="conteinerLinguagens">               
+                <!--Primeira Atividade Italia-->
+                    <div class="cardLinguagens1" id="cardLinguagens"> <!--É o card que está aparecedo na tela-->
+                            <button  id="abrirModal">   <!-- todas as informações da tela estão dentro desse botão, que ao clicar vai abrir um modal -->
+                                <img src="../../assents/imgs/atividadeItalia.png" alt="Imagem" class="imagemCard">       <!-- ta chamando a imagem da atividade  -->
+                            </button>
+                    </div>
+                <div class="modal" id="modal">   <!-- cria uma divisão só para o que vai dentro do modal -->
+                    <div class="conteudoModal">  <!-- dentro dessa div aparece tudo no modal -->
+                    <div class="slideModalEspecial3">
+                        <div style="position: relative; width: 71%; height: 0; padding-top: 40%;
+                        padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+                        border-radius: 8px; will-change: transform;">
+                            <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+                                src="https://www.canva.com/design/DAGkUzxVPF0/tCP63xtIZ1kckKPse3KxzA/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+                            </iframe>
+                        </div>
+                    </div>
+                        <div class="corpoTextoModal">
+                            <p> <strong> Competências e habilidades: </strong> C2 - H10, C6-H36, H39, H40</p>
+                            <p> <strong> Objetivo: </strong> Compreender o papel dos países na corrida imperialista por que é essencial para analisar as relações internacionais, o equilíbrio de poder e os legados históricos que ainda enfrentaram conflitos e desafios atuais. Isso nos ajuda a entender a dinâmica global e suas repercussões contemporâneas.</p>
+                            <p> <strong> Comentário pessoal: </strong> Eu gostei de realizar essa atividade porque tive conversas muito produtivas com meu trio sobre o assunto.</p>
+                        </div>
+                    <button id="fecharModal" class="fecharModal"> Voltar </button> <!-- esse é o botão para sair -->
+                    </div>
+                </div>                
+                
+                <!--Segunda Atividade Franca-->
+                    <div class="cardLinguagens" id="cardLinguagens">
+                            <button id="abrirModal1"> <!-- todas as informações da tela estão dentro desse botão, que ao clicar vai abrir um modal -->
+                                <img src="../../assents/imgs/atividadeFraca.png" alt="Imagem" class="imagemCard"> <!-- ta chamando a imagem da atividade  -->
+                            </button>
+                    </div>
+                <div class="modal" id="modal1">  <!-- cria uma divisão só para o que vai dentro do modal -->
+                    <div class="conteudoModal1"> <!-- dentro dessa div aparece tudo no modal -->
+                        <div class="slideModalEspecial3">
+                            <div style="position: relative; width: 71%; height: 0; padding-top: 40%;
+                            padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+                            border-radius: 8px; will-change: transform;">
+                                <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+                                    src="https://www.canva.com/design/DAGgYzmNmPo/YuBao-d6AciXgsyD-6n5Uw/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+                                </iframe>
+                            </div>
+                        </div>
+                        <div class="corpoTextoModal">
+                            <p> <strong>Competências e habilidades:</strong> C2 - H10, C6-H36, H39, H40</p>
+                            <p> <strong>Objetivo:</strong> Compreender os conflitos geopolíticos em um mundo multipolar é crucial, pois ajuda a entender as dinâmicas de poder, impactando a economia global, influenciando a segurança internacional e agravando os desafios ambientais. Além disso, esses conflitos moldam identidades nacionais, tornando seu estudo essencial para enfrentar os desafios globais de forma informada.</p>
+                            <p> <strong>Comentário pessoal:</strong> Gostei de realizar essa atividade porque entender a economia mundial é essencial para desenvolver uma visão de futuro e tomar decisões informadas.</p>
+                        </div>
+                        <button id="fecharModal1" class="fecharModal"> Voltar </button> <!-- esse é o botão para sair -->
+                    </div>
+                </div> 
+        </section>
+        <section class="(2)" id="trimestre2">
+            <div class="conteinerLinguagens">
+                <!--Primeira Atividade Segundo Trimestre Filipinas-->
+                    <div class="cardLinguagens" id="cardLinguagens">   <!--  é o cardzinho que esta aparecendo na tela  -->
+                        <button  id="abrirModal2">   <!-- todas as informações da tela estão dentro desse botão, que ao clicar vai abrir um modal -->
+                            <img src="../../assents/imgs/atividadeFilipinas.png" alt="Imagem">       <!-- ta chamando a imagem da atividade  -->
+                        </button>
+                    </div>
+                <div class="modal" id="modal2">   <!-- cria uma divisão só para o que vai dentro do modal -->
+                    <div class="conteudoModal2">  <!-- dentro dessa div aparece tudo no modal -->
+                        <div class="slideModalEspecial3">
+                            <div style="position: relative; width: 71%; height: 0; padding-top: 40%;
+                            padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+                            border-radius: 8px; will-change: transform;">
+                                <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+                                    src="https://www.canva.com/design/DAGwnRutVlM/45a8oMbnhyqgpLB0CzLskg/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+                                </iframe>
+                            </div>
+                        </div>
+                        <div class="corpoTextoModal">
+                            <p> <strong>Competências e habilidades:</strong> Não disponibilizado.</p>
+                            <p> <strong>Objetivo:</strong> O objetivo da atividade é aprofundar seu conhecimento sobre os processos de independência de países da África e da Ásia entre 1940 e 1970. Para isso, você deverá analisar as lutas sociais e as mudanças políticas que levaram à independência do país escolhido, compreender a formação de suas novas instituições sociais e políticas e, por fim, relacionar o processo de descolonização à Segunda Guerra Mundial.</p>
+                            <p> <strong>Comentário pessoal:</strong> Eu não estava mais acostumada a fazer atividades individuais, então foi bom para relembrar e colocar só a minha identidade no trabalho.</p>
+                        </div>
+                    <button id="fecharModal2" class="fecharModal"> Voltar </button> <!-- esse é o botão para sair -->
+                    </div>
+                </div>
+
+                <!--Segunda Atividade Segundo Trimestre DossiePresidentes-->
+                    <div class="cardLinguagens" id="cardLinguagens">
+                        <button id="abrirModal3">   <!-- todas as informações da tela estão dentro desse botão, que ao clicar vai abrir um modal -->
+                            <img src="../../assents/imgs/atividadeDossie.png" alt="Imagem">       <!-- ta chamando a imagem da atividade  -->
+                        </button>
+                    </div>
+                <div class="modal" id="modal3">  <!-- cria uma divisão só para o que vai dentro do modal -->
+                    <div class="conteudoModal3"> <!-- dentro dessa div aparece tudo no modal -->
+                        <div class="slideModalEspecial">
+                            <div style="position: relative; width: 40%; height: 0; padding-top: 57%;
+                            padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+                            border-radius: 8px; will-change: transform;">
+                                <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+                                    src="https://www.canva.com/design/DAGxHYhGrSI/7nJzQZr70s5azVPDYz2T5A/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+                                </iframe>
+                            </div> 
+                        </div>
+                        <div class="corpoTextoModal">
+                            <p> <strong>Competências e habilidades:</strong>     C2-H10, C4 H22, H26, H27.</p>
+                            <p> <strong>Objetivo:</strong> O objetivo da atividade "Dossiê Presidentes do Brasil" é estudar a fundo a República Oligárquica (1894-1930) através de uma pesquisa sobre os presidentes. A atividade busca desenvolver habilidades de pesquisa e trabalho em equipe, além de ajudar a turma a compreender o contexto político, social e econômico da época. Por fim, ensina a organizar e apresentar as informações de forma clara e padronizada.</p>
+                            <p> <strong>Comentário pessoal:</strong> Eu gostei de fazer essa atividade por ser diferente e envolver a dedicação da turma toda.</p>
+                        </div>
+                        <button id="fecharModal3" class="fecharModal"> Voltar </button> <!-- esse é o botão para sair -->
+                    </div>
+                </div>    
+                
+                <!--Terceira Atividade Segundo Trimestre JornalInformes-->
+                    <div class="cardLinguagens" id="cardLinguagens">
+                        <button id="abrirModal4">   <!-- todas as informações da tela estão dentro desse botão, que ao clicar vai abrir um modal -->
+                            <img src="../../assents/imgs/atividadeJornalInf.png" alt="Imagem">       <!-- ta chamando a imagem da atividade  -->
+                        </button>
+                    </div>
+                    <div class="modal" id="modal4">  <!-- cria uma divisão só para o que vai dentro do modal -->
+                        <div class="conteudoModal4"> <!-- dentro dessa div aparece tudo no modal -->
+                            <div class="slideModalEspecial">
+                                <div style="position: relative; width: 40%; height: 0; padding-top: 57%;
+                                padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+                                border-radius: 8px; will-change: transform;">
+                                    <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+                                        src="https://www.canva.com/design/DAGnVusCWho/lUUnHrn5YtlDesbZ6Ka79Q/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+                                    </iframe>
+                                </div>
+                            </div>
+                            <div class="corpoTextoModal">
+                                <p> <strong>Competências e habilidades:</strong> C6 - H39.</p>
+                                <p> <strong>Objetivo:</strong> Os alunos, em grupo, tem que criar um Jornal Histórico para demonstrar de forma criativa o conhecimento sobre o final da Primeira Guerra Mundial. A tarefa busca desenvolver habilidades de pesquisa, escrita e análise crítica, incentivando-os a avaliar as consequências da guerra, como o Tratado de Versalhes, e a trabalhar em equipe para organizar as informações de forma coerente.</p>
+                                <p> <strong>Comentário pessoal:</strong> Eu achei essa atividade muito legal, porém foi difícil de realizar por que buscar as informações da época foi complicado.</p>
+                            </div>
+                            <button id="fecharModal4" class="fecharModal"> Voltar </button> <!-- esse é o botão para sair -->
+                        </div>
+                    </div>
+            </div>
+        </section>     
+        <section class="(3)" id="trimestre3">
+            <div class="conteinerLinguagens">
+                <!--Primeira Atividade Terceiro Trimestre Vianelle-->
+                    <div class="cardLinguagens" id="cardLinguagens">
+                        <button id="abrirModal5">   <!-- todas as informações da tela estão dentro desse botão, que ao clicar vai abrir um modal -->
+                            <img src="../../assents/imgs/atividadeVianelle.png" alt="Imagem">       <!-- ta chamando a imagem da atividade  -->
+                        </button>
+                    </div>
+                <div class="modal" id="modal5">  <!-- cria uma divisão só para o que vai dentro do modal -->
+                    <div class="conteudoModal5"> <!-- dentro dessa div aparece tudo no modal -->
+                        <div class="slideModalEspecial3">
+                            <div style="position: relative; width: 71%; height: 0; padding-top: 40%;
+                            padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+                            border-radius: 8px; will-change: transform;">
+                                <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+                                    src="https://www.canva.com/design/DAG1ZcQnFO4/NF0VHBI3nYebyS1_iYZtlg/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+                                </iframe>
+                            </div>
+                        </div>
+                        <div class="corpoTextoModal">
+                                <p> <strong>Competências e habilidades:</strong> Não disponibilizado.</p>
+                                <p> <strong>Objetivo:</strong> Esta atividade teve como foco entender como se deu a construção de Brasília, especificamente sob a ótica do Plano de Metas "50 anos em 5" (o lema que impulsionou o projeto da capital), e a forma como esse período acelerado influenciou o desenvolvimento urbano.</p>
+                                <p> <strong>Comentário pessoal:</strong> Eu gostei do processo criativo dessa atividade.</p>
+                        </div>
+                        <button id="fecharModal5" class="fecharModal"> Voltar </button> <!-- esse é o botão para sair -->
+                    </div>
+                </div>
+
+                <!--Segunda Atividade Terceiro Trimestre OperaçãoBrother-->
+                <div class="cardLinguagens" id="cardLinguagens">
+                    <button id="abrirModal6">   <!-- todas as informações da tela estão dentro desse botão, que ao clicar vai abrir um modal -->
+                        <img src="../../assents/imgs/atividadeOperacao.png" alt="Imagem">       <!-- ta chamando a imagem da atividade  -->
+                    </button>
+                </div>
+                <div class="modal" id="modal6">  <!-- cria uma divisão só para o que vai dentro do modal -->
+                    <div class="conteudoModal6"> <!-- dentro dessa div aparece tudo no modal -->
+                        <div class="slideModalEspecial">
+                            <div style="position: relative; width: 23%; height: 0; padding-top: 60%;
+                            padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+                            border-radius: 8px; will-change: transform;">
+                                <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+                                    src="https://www.canva.com/design/DAG5DN8fbYY/n2de2Q516z_k0PlyeE10RQ/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+                                </iframe>
+                            </div>
+                        </div>
+                        <div class="corpoTextoModal">
+                                <p> <strong>Competências e habilidades:</strong> Não disponibilizado</p>
+                                <p> <strong>Objetivo:</strong> O propósito desta atividade é compreender o contexto e a execução da Operação Brother Sam, explorando as estratégias políticas e militares envolvidas nessa intervenção.</p>
+                                <p> <strong>Comentário pessoal:</strong> Eu aprendi que a história do Brasil é muito mais complexa e interligada com a geopolítica do que eu imaginava, e que o golpe de 1964 não foi só uma questão interna. O que mais me surpreendeu foi descobrir a dimensão e a seriedade do plano militar dos EUA, com navios e armas prontas, mostrando que a Guerra Fria estava realmente à nossa porta. Essa pesquisa me ajudou muito a desenvolver meu senso crítico sobre o papel das potências estrangeiras na América Latina.</p>
+                        </div>
+                        <button id="fecharModal6" class="fecharModal"> Voltar </button> <!-- esse é o botão para sair -->
+                    </div>
+                </div>
+
+                <!--Terceira Atividade Terceiro Trimestre DitaduraMilitar-->
+                <div class="cardLinguagens" id="cardLinguagens">
+                    <button id="abrirModal7">   <!-- todas as informações da tela estão dentro desse botão, que ao clicar vai abrir um modal -->
+                        <img src="../../assents/imgs/atividadeDitura.png" alt="Imagem">       <!-- ta chamando a imagem da atividade  -->
+                    </button>
+                </div>
+                <div class="modal" id="modal7">  <!-- cria uma divisão só para o que vai dentro do modal -->
+                    <div class="conteudoModal7"> <!-- dentro dessa div aparece tudo no modal -->
+                        <div class="slideModalEspecial3">
+                            <div style="position: relative; width: 71%; height: 0; padding-top: 40%;
+                            padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+                            border-radius: 8px; will-change: transform;">
+                                <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+                                    src="https://www.canva.com/design/DAG5DAte4ho/jDrar8SDFYKswD0KC4-CQA/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+                                </iframe>
+                            </div>
+                        </div>
+                        <div class="corpoTextoModal">
+                                <p> <strong>Competências e habilidades:</strong> Não disponibilizado</p>
+                                <p> <strong>Objetivo:</strong> O objetivo desta atividade é iniciar o estudo da Ditadura Militar no Brasil, abordando os principais eventos, características e o contexto histórico desse período.</p>
+                                <p> <strong>Comentário pessoal:</strong> Gostei de saber mais sobre esse tema tão importante.</p>
+                        </div>
+                        <button id="fecharModal7" class="fecharModal"> Voltar </button> <!-- esse é o botão para sair -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="historia.js"></script>
+</body>
+</html>

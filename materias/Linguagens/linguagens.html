@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../assents/style.css">
+    <link rel="shortcut icon" href="../../assents/imgs/logoImagem.png">
+    <title>Portfólio SofiaHFer</title>
+</head>
+<body>
+    <!-- Css da imagem de fundo -->
+    <style>
+        body{
+            background-image: url('../../assents/imgs/fundoLinguagens.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+    </style>
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <img src="../../assents/imgs/logoImagem.png" alt="" class="imagemLogo">
+                <h1><a href="../../index.html" class="nomeLogo">SofiaHFer</a></h1>
+            </div>
+            <div class="nav-list">
+                <ul>
+                <li class="nav-item"><a href="../Tecnico/tecnicoMenu.html" class="nav-link">Técnico</a></li>
+                <li class="nav-item"><a href="../Linguagens/linguagens.html" class="nav-link">Linguagens</a></li>
+                <li class="nav-item"><a href="../Matematica/matematica.html" class="nav-link">Matematica</a></li>
+                <li class="nav-item"><a href="../Natureza/natureza.html" class="nav-link">Natureza</a></li>
+                <li class="nav-item"><a href="../Historia/historia.html" class="nav-link">História</a></li>
+                </ul>
+            </div>
+            <div class="login-button">
+                <button><a href="../../materias/PPE/PPE.html">Saiba Mais</a></button>
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="assets/img/menu_white_36dp.svg" alt=""></button>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="#" class="nav-link">Técnico</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Linguagens</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Matematica</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Natureza</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">História</a></li>
+            </ul>
+
+            <div class="login-button">
+                <button><a href="#">Entrar</a></button>
+            </div>
+        </div>
+    </header>
+    <!--Criando uma nav bar com os requisitos do portfólio-->>
+    <div class="container-trimestre">
+        <a class="botoesTrimestre" onclick="mostrarTrimestre(1)" id="tris1" href="#trimestre1">Primeiro Trimestre</a>
+        <a class="botoesTrimestre" onclick="mostrarTrimestre(2)" id="tris2" href="#trimestre2">Segundo Trimestre</a>
+        <a class="botoesTrimestre" onclick="mostrarTrimestre(3)" id="tris3" href="#trimestre3">Terceiro Trimestre</a>
+    </div>
+
+    <div class="containerAtividades">
+        <section class="(1)" id="trimestre1">
+            <div class="conteinerLinguagens">               
+                <!--Primeira Atividade RevistaLiteraria-->
+                    <div class="cardLinguagens1" id="cardLinguagens"> <!--É o card que está aparecedo na tela-->
+                            <button  id="abrirModal">   <!-- todas as informações da tela estão dentro desse botão, que ao clicar vai abrir um modal -->
+                                <img src="../../assents/imgs/atividadeRevistaLit.png" alt="Imagem" class="imagemCard">       <!-- ta chamando a imagem da atividade  -->
+                            </button>
+                    </div>
+                <div class="modal" id="modal">   <!-- cria uma divisão só para o que vai dentro do modal -->
+                    <div class="conteudoModal">  <!-- dentro dessa div aparece tudo no modal -->
+                    <div class="slideModalEspecial">
+                       <div style="position: relative; width: 40%; height: 0; padding-top: 57%;
+                        padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+                        border-radius: 8px; will-change: transform;">
+                        <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+                            src="https://www.canva.com/design/DAGi3NrXktY/rLE44ZgfDqqRMwRsqs_TJQ/watch?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+                        </iframe>
+                        </div>
+                    </div>
+                        <div class="corpoTextoModal">
+                            <p> <strong> Competências e habilidades: </strong> C1 - H1, H2 e H4 </p>
+                            <p> <strong> Objetivo: </strong>Uma revista literária tem como objetivo promover a literatura, publicando contos, poesias e críticas. Ela visa divulgar novos talentos, estimular debates sobre temas culturais e sociais, fomentar a leitura e preservar a cultura literária. Além disso, busca criar uma comunidade que conecte escritores, leitores e críticos, enriquecendo o panorama literário.</p>
+                            <p> <strong> Comentário pessoal: </strong>Estou curtindo muito fazer essa revista literária porque adoro livros. Sei que isso vai me ajudar bastante na minha formação, e bons leitores se tornam bons escritores.</p>
+                        </div>
+                    <button id="fecharModal" class="fecharModal"> Voltar </button> <!-- esse é o botão para sair -->
+                    </div>
+                </div>                
+                
+                <!--Segunda Atividade NotaRedacao-->
+                    <div class="cardLinguagens2" id="cardLinguagens">
+                            <button id="abrirModal1"> <!-- todas as informações da tela estão dentro desse botão, que ao clicar vai abrir um modal -->
+                                <img src="../../assents/imgs/atividadeRedacao.png" alt="Imagem" class="imagemCard"> <!-- ta chamando a imagem da atividade  -->
+                            </button>
+                    </div>
+                <div class="modal" id="modal1">  <!-- cria uma divisão só para o que vai dentro do modal -->
+                    <div class="conteudoModal1"> <!-- dentro dessa div aparece tudo no modal -->
+                        <div class="slideModal">
+                            <img src="../../assents/imgs/imagemAtividadeLinguagens1.png" alt="Imagem" class="imagemNota"> <!-- ta chamando a imagem da atividade  -->
+                        </div>
+                        <div class="corpoTextoModal">
+                            <p> <strong>Competências e habilidades:</strong> H29, H30 e H31 </p>
+                            <p> <strong>Objetivo:</strong>Treinar a mente para a redação do Enem.</p>
+                            <p> <strong>Comentário pessoal:</strong>Eu não sou a maior fã de redação, mas percebi que, esse ano tenho que me esforçar mais nesse aspecto.</p>
+                        </div>
+                        <button id="fecharModal1" class="fecharModal"> Voltar </button> <!-- esse é o botão para sair -->
+                    </div>
+                </div> 
+
+                <!--Terceira Atividade ComentarioPadlet-->
+                    <div class="cardLinguagens3" id="cardLinguagens">
+                        <button id="abrirModal2">   <!-- todas as informações da tela estão dentro desse botão, que ao clicar vai abrir um modal -->
+                            <img src="../../assents/imgs/atividadeComentario.png" alt="Imagem">       <!-- ta chamando a imagem da atividade  -->
+                        </button>
+                    </div>
+                <div class="modal" id="modal2">  <!-- cria uma divisão só para o que vai dentro do modal -->
+                    <div class="conteudoModal2"> <!-- dentro dessa div aparece tudo no modal -->
+                        <div class="slideModal">
+                            <h2 class="atividadePadlet">Comentários do Padlet</h2>
+                            <p class="atividadePadlet">"A história do defunto Brás Cubas, que critica a sociedade do século XIX, abordando temas como vaidade e aparências. Com um humor irônico, a obra reflete sobre a vida e a morte, apresentando personagens complexos que ilustram falhas humanas. A narrativa quebra as convenções tradicionais, tornando-se uma leitura instigante e relevante."</p>
+                            <p class="atividadePadlet">"O livro "Parque Industrial", de Pagu, retrata a realidade da classe trabalhadora e as mudanças sociais causadas pela industrialização. A obra aborda as condições de trabalho e as desigualdades enfrentadas pelos operários, convidando à reflexão sobre exploração e direitos, temas ainda relevantes hoje. Pagu destaca a importância da solidariedade entre os trabalhadores, o que considera fundamental para a justiça social. Uma narrativa impactante nos ajuda a entender as dinâmicas sociais e nos inspira a lutar por um mundo mais justo."</p>
+                            <p class="atividadePadlet">-Sofia Helen Ferreira</p> 
+                        </div>
+                        <div class="corpoTextoModal">
+                            <p> <strong>Competências e habilidades:</strong> C2 - H7, H9 e H10  </p>
+                            <p> <strong>Objetivo:</strong>Comentar livros em grupo enriquece a compreensão das obras, pois permite a troca de ideias e o desenvolvimento de habilidades críticas e empatia. Essa prática fortalece os laços sociais e torna a experiência de leitura mais dinâmica e colaborativa.</p>
+                            <p> <strong>Comentário pessoal:</strong>Gostei muito de ter participado dessa atividade, mesmo sendo um pouco tímida. Compartilhe minhas ideias sobre os livros com tantas pessoas para uma experiência nova. Sempre tive uma paixão pela leitura e até uso de aplicativos como o Skoob para registrar minhas críticas literárias. Essa prática me ajuda a refletir ainda mais sobre as obras que leio.</p>
+                        </div>
+                        <button id="fecharModal2" class="fecharModal"> Voltar </button> <!-- esse é o botão para sair -->
+                    </div>
+                </div>
+
+                <!--Quarta Atividade InformaEnem-->
+                    <div class="cardLinguagens4" id="cardLinguagens">
+                        <button id="abrirModal3">   <!-- todas as informações da tela estão dentro desse botão, que ao clicar vai abrir um modal -->
+                            <img src="../../assents/imgs/atividadeSite.png" alt="Imagem">       <!-- ta chamando a imagem da atividade  -->
+                        </button>
+                    </div>
+                <div class="modal" id="modal3">  <!-- cria uma divisão só para o que vai dentro do modal -->
+                    <div class="conteudoModal3"> <!-- dentro dessa div aparece tudo no modal -->
+                        <div class="slideModalEspecial3">
+                            <div style="position: relative; width: 71%; height: 0; padding-top: 40%;
+                            padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+                            border-radius: 8px; will-change: transform;">
+                                <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+                                    src="https://www.canva.com/design/DAGk8xsMcSI/99f99hNR1Q6V-supqXYtGg/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+                                </iframe>
+                            </div>
+                        </div>
+                        <div class="corpoTextoModal">
+                            <p> <strong>Competências e habilidades:</strong> C4 - H23 & C5 - H24, H25 e H28 </p>
+                            <p> <strong>Objetivo:</strong>A criação de um site com repertório para o ENEM tem como objetivo central fornecer aos estudantes uma fonte acessível e diversificada de informações e referências para enriquecer suas redações. A plataforma deve facilitar o acesso, estimular a criatividade e a prática de redação, além de promover a interatividade. Em essência, o site visa preparar os alunos para o ENEM, ao mesmo tempo em que fomenta a leitura crítica e a reflexão sobre temas atuais.</p>
+                            <p> <strong>Comentário pessoal:</strong>Gostei muito de criar este site, tanto pela minha paixão por programação quanto pelo meu interesse em ampliar o repertório de informações. É fascinante descobrir novos conteúdos que posso adicionar e compartilhar.</p>
+                        </div>
+                        <button id="fecharModal3" class="fecharModal"> Voltar </button> <!-- esse é o botão para sair -->
+                    </div>
+                </div>
+        </section>
+        <section class="(2)" id="trimestre2">
+            <div class="conteinerLinguagens">
+                <!--Primeira Atividade Segundo Trimestre DestinoContraLiberdade-->
+                    <div class="cardLinguagens" id="cardLinguagens">   <!--  é o cardzinho que esta aparecendo na tela  -->
+                        <button  id="abrirModal4">   <!-- todas as informações da tela estão dentro desse botão, que ao clicar vai abrir um modal -->
+                            <img src="../../assents/imgs/atividadeDestino.png" alt="Imagem">       <!-- ta chamando a imagem da atividade  -->
+                        </button>
+                    </div>
+                <div class="modal" id="modal4">   <!-- cria uma divisão só para o que vai dentro do modal -->
+                    <div class="conteudoModal">  <!-- dentro dessa div aparece tudo no modal -->
+                        <div class="slideModalEspecial">
+                            <div style="position: relative; width: 40%; height: 0; padding-top: 57%;
+                            padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+                            border-radius: 8px; will-change: transform;">
+                                <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+                                    src="https://www.canva.com/design/DAG5BAMGSeM/vbz2NJnx8WqQGEtPrWpDzw/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+                                </iframe>
+                            </div>
+                        </div>
+                        <div class="corpoTextoModal">
+                            <p> <strong>Competências e habilidades:</strong> C4 - H23 </p>
+                            <p> <strong>Objetivo:</strong>O reconto é uma prática acadêmica valiosa que aprofunda a compreensão de narrativas, fortalecendo as habilidades de análise e interpretação. Ao mesmo tempo, ele estimula a criatividade e aprimora a escrita, ampliando o vocabulário e a exploração de estilos, e ainda favorece o compartilhamento de ideias em discussões.</p>
+                            <p> <strong>Comentário pessoal:</strong>Eu realmente gostei de fazer essa atividade, especialmente porque tivemos uma aula do RedaPet que falou sobre "sair da caixa" para aprimorar nossas redações. Essa atividade reflete bem esse conceito. Embora tenha sido desafiador criar algo do zero, foi uma experiência muito gratificante e divertida.</p>
+                        </div>
+                    <button id="fecharModal4" class="fecharModal"> Voltar </button> <!-- esse é o botão para sair -->
+                    </div>
+                </div>
+
+                <!--Segunda Atividade Segundo Trimestre BiografiaProfissional-->
+                    <div class="cardLinguagens" id="cardLinguagens">
+                        <button id="abrirModal5">   <!-- todas as informações da tela estão dentro desse botão, que ao clicar vai abrir um modal -->
+                            <img src="../../assents/imgs/atividadeBiografia.png" alt="Imagem">       <!-- ta chamando a imagem da atividade  -->
+                        </button>
+                    </div>
+                <div class="modal" id="modal5">  <!-- cria uma divisão só para o que vai dentro do modal -->
+                    <div class="conteudoModal5"> <!-- dentro dessa div aparece tudo no modal -->
+                        <div class="slideModalEspecial">
+                            <div style="position: relative; width: 40.1%; height: 0; padding-top: 56.5%;
+                            padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+                            border-radius: 8px; will-change: transform;">
+                            <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+                                src="https://www.canva.com/design/DAGk86dV_CQ/oNhhh4Qrrss4yXyPQEBSWA/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+                            </iframe>
+                            </div>
+                        </div>
+                        <div class="corpoTextoModal">
+                            <p> <strong>Competências e habilidades:</strong> C4 - H23 </p>
+                            <p> <strong>Objetivo:</strong>A biografia profissional é uma ferramenta fundamental para apresentar a trajetória de um indivíduo no mercado de trabalho. Seu objetivo é destacar conquistas, estabelecer credibilidade e facilitar o networking. Além disso, o processo de escrita permite a reflexão sobre a carreira e a definição de metas futuras.</p>
+                            <p> <strong>Comentário pessoal:</strong>Gostei muito de fazer a biografia profissional. Foi uma oportunidade de refletir sobre minha trajetória, valorizar conquistas e pensar nas metas futuras. Recomendo a todos, pois ajuda a fortalecer a identidade profissional!</p>
+                        </div>
+                        <button id="fecharModal5" class="fecharModal"> Voltar </button> <!-- esse é o botão para sair -->
+                    </div>
+                </div>    
+                
+                <!--Terceira Atividade Segundo Trimestre NotaRedacao-->
+                    <div class="cardLinguagens" id="cardLinguagens">
+                        <button id="abrirModal6">   <!-- todas as informações da tela estão dentro desse botão, que ao clicar vai abrir um modal -->
+                            <img src="../../assents/imgs/atividadeRedacao.png" alt="Imagem">       <!-- ta chamando a imagem da atividade  -->
+                        </button>
+                    </div>
+                    <div class="modal" id="modal6">  <!-- cria uma divisão só para o que vai dentro do modal -->
+                        <div class="conteudoModal6"> <!-- dentro dessa div aparece tudo no modal -->
+                            <div class="slideModal">
+                                <h2 class="atividadeRedacaoNota">Nota da redação</h2>
+                                <p class="atividadeRedacaoNota">Minha nota na redação foi 760</p> 
+                            </div>
+                            <div class="corpoTextoModal">
+                                <p> <strong>Competências e habilidades:</strong> C2: H6, H7 E H9 </p>
+                                <p> <strong>Objetivo:</strong>Treinar a mente para a redação do Enem.</p>
+                                <p> <strong>Comentário pessoal:</strong>Eu gostei da minha nota da redação online, por que eu consegui ver uma evolução de uma para a outra.</p>
+                            </div>
+                            <button id="fecharModal6" class="fecharModal"> Voltar </button> <!-- esse é o botão para sair -->
+                        </div>
+                    </div>
+                
+                <!--Terceira Atividade Segundo Trimestre WorksOfArts-->
+                    <div class="cardLinguagens" id="cardLinguagens">
+                        <button id="abrirModal7">   <!-- todas as informações da tela estão dentro desse botão, que ao clicar vai abrir um modal -->
+                            <img src="../../assents/imgs/atividadeIng.png" alt="Imagem">       <!-- ta chamando a imagem da atividade  -->
+                        </button>
+                    </div>
+                <div class="modal" id="modal7">  <!-- cria uma divisão só para o que vai dentro do modal -->
+                    <div class="conteudoModal7"> <!-- dentro dessa div aparece tudo no modal -->
+                        <div class="slideModalEspecial3">
+                            <div style="position: relative; width: 71%; height: 0; padding-top: 40%;
+                            padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+                            border-radius: 8px; will-change: transform;">
+                            <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+                                src="https://www.canva.com/design/DAG5BPhmd0g/ybS4QouKUCRWOFmLtwgFkg/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+                            </iframe>
+                            </div>
+                        </div>
+                        <div class="corpoTextoModal">
+                            <p> <strong>Competências e habilidades:</strong> C2: H6, H7 E H9 </p>
+                            <p> <strong>Objetivo:</strong>O objetivo principal da atividade é praticar sua escrita em inglês ao criar um portfólio sobre seus artistas, filmes e músicas favoritos. Essa tarefa é uma forma de avaliar sua capacidade de escrever sobre temas pessoais e de aplicar corretamente o tempo verbal Simple Past. Além disso, a atividade também serve para testar sua habilidade em interpretar instruções e expandir seu vocabulário relacionado a artes e cultura.</p>
+                            <p> <strong>Comentário pessoal:</strong>Eu me animei muito para fazer essa atividade, por que é sobre um tema que gosto.</p>
+                        </div>
+                        <button id="fecharModal7" class="fecharModal"> Voltar </button> <!-- esse é o botão para sair -->
+                    </div>
+                </div>
+            </div>
+        </section>     
+        <section class="(3)" id="trimestre3">
+            <div class="conteinerLinguagens">
+                <!--Terceira Atividade Segundo Trimestre-->
+                    <div class="cardLinguagens" id="cardLinguagens">
+                        <button id="abrirModal8">   <!-- todas as informações da tela estão dentro desse botão, que ao clicar vai abrir um modal -->
+                            <img src="../../assents/imgs/atividadeRedacao.png" alt="Imagem">       <!-- ta chamando a imagem da atividade  -->
+                        </button>
+                    </div>
+                <div class="modal" id="modal8">  <!-- cria uma divisão só para o que vai dentro do modal -->
+                    <div class="conteudoModal8"> <!-- dentro dessa div aparece tudo no modal -->
+                        <div class="slideModal">
+                            <h2 class="atividadeRedacaoNota">Nota da redação</h2>
+                            <p class="atividadeRedacaoNota">Minha maior nota na redação foi 760</p>
+                        </div>
+                        <div class="corpoTextoModal">
+                                <p> <strong>Competências e habilidades:</strong> C2: H6, H7 E H9 </p>
+                                <p> <strong>Objetivo:</strong>Treinar a mente para a redação do Enem.</p>
+                                <p> <strong>Comentário pessoal:</strong>Eu gostei da minha nota da redação online, por que eu consegui ver uma evolução de uma para a outra.</p>
+                        </div>
+                        <button id="fecharModal8" class="fecharModal"> Voltar </button> <!-- esse é o botão para sair -->
+                    </div>
+                </div>
+
+                <!--Terceira Atividade Segundo Trimestre-->
+                <div class="cardLinguagens" id="cardLinguagens">
+                    <button id="abrirModal9">   <!-- todas as informações da tela estão dentro desse botão, que ao clicar vai abrir um modal -->
+                        <img src="../../assents/imgs/atividadeReels.png" alt="Imagem">       <!-- ta chamando a imagem da atividade  -->
+                    </button>
+                </div>
+                <div class="modal" id="modal9">  <!-- cria uma divisão só para o que vai dentro do modal -->
+                    <div class="conteudoModal9"> <!-- dentro dessa div aparece tudo no modal -->
+                        <div class="slideModalEspecial">
+                            <div style="position: relative; width: 40%; height: 0; padding-top: 57%;
+                            padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+                            border-radius: 8px; will-change: transform;">
+                                <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+                                    src="https://www.canva.com/design/DAGi3NrXktY/rLE44ZgfDqqRMwRsqs_TJQ/watch?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+                                </iframe>
+                            </div>
+                        </div>
+                        <div class="corpoTextoModal">
+                                <p> <strong>Competências e habilidades:</strong> C2: H6, H7 E H9 </p>
+                                <p> <strong>Objetivo:</strong> É fascinante como a obra de Salim utiliza Florianópolis como um palco central, possibilitando ao leitor identificar e mapear os ambientes descritos. Ter acesso e conseguir se situar nesses locais históricos e geográficos da cidade enriquece a análise da narrativa, pois permite uma compreensão mais profunda do contexto em que o autor situou sua história.</p>
+                                <p> <strong>Comentário pessoal:</strong> Muito legal essa atividade para uma base no vestibular da UFSC.</p>
+                        </div>
+                        <button id="fecharModal9" class="fecharModal"> Voltar </button> <!-- esse é o botão para sair -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </div>
+    <script src="linguagens.js"></script>
+</body>
+</html>

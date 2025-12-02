@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../assents/style.css">
+    <link rel="shortcut icon" href="../../assents/imgs/logoImagem.png">
+    <title>Portfólio SofiaHFer</title>
+</head>
+<body>
+    <!-- Css da imagem de fundo -->
+    <style>
+        body{
+            background-image: url('../../assents/imgs/fundoNatureza.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+    </style>
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <img src="../../assents/imgs/logoImagem.png" alt="" class="imagemLogo">
+                <h1><a href="../../index.html" class="nomeLogo">SofiaHFer</a></h1>
+            </div>
+            <div class="nav-list">
+                <ul>
+                <li class="nav-item"><a href="../Tecnico/tecnicoMenu.html" class="nav-link">Técnico</a></li>
+                <li class="nav-item"><a href="../Linguagens/linguagens.html" class="nav-link">Linguagens</a></li>
+                <li class="nav-item"><a href="../Matematica/matematica.html" class="nav-link">Matematica</a></li>
+                <li class="nav-item"><a href="../Natureza/natureza.html" class="nav-link">Natureza</a></li>
+                <li class="nav-item"><a href="../Historia/historia.html" class="nav-link">História</a></li>
+                </ul>
+            </div>
+            <div class="login-button">
+                <button><a href="../../materias/PPE/PPE.html">Saiba Mais</a></button>
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="assets/img/menu_white_36dp.svg" alt=""></button>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="#" class="nav-link">Técnico</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Linguagens</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Matematica</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Natureza</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">História</a></li>
+            </ul>
+
+            <div class="login-button">
+                <button><a href="#">Entrar</a></button>
+            </div>
+        </div>
+    </header>
+    <!--Criando uma nav bar com os requisitos do portfólio-->>
+    <div class="container-trimestre">
+        <a class="botoesTrimestre" onclick="mostrarTrimestre(1)" id="tris1" href="#trimestre1">Primeiro Trimestre</a>
+        <a class="botoesTrimestre" onclick="mostrarTrimestre(2)" id="tris2" href="#trimestre2">Segundo Trimestre</a>
+        <a class="botoesTrimestre" onclick="mostrarTrimestre(3)" id="tris3" href="#trimestre3">Terceiro Trimestre</a>
+    </div>
+
+    <div class="containerAtividades">
+        <section class="(1)" id="trimestre1">
+            <div class="conteinerLinguagens">               
+                <!--Primeira Atividade-->
+                    <div class="cardLinguagens1" id="cardLinguagens"> <!--É o card que está aparecedo na tela-->
+                            <button  id="abrirModal">   <!-- todas as informações da tela estão dentro desse botão, que ao clicar vai abrir um modal -->
+                                <img src="../../assents/imgs/atividadePoluicao.png" alt="Imagem" class="imagemCard">       <!-- ta chamando a imagem da atividade  -->
+                            </button>
+                    </div>
+                <div class="modal" id="modal">   <!-- cria uma divisão só para o que vai dentro do modal -->
+                    <div class="conteudoModal">  <!-- dentro dessa div aparece tudo no modal -->
+                    <div class="slideModal">
+                        <a href="https://www.canva.com/design/DAGe-k9YUFU/eGjBkTdGDeOFAwNMaO7n_w/edit?utm_content=DAGe-k9YUFU&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"> 
+                            <div style="position: relative; width: 80%; height: 0; padding-top: 45.1%;
+                            padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+                            border-radius: 8px; will-change: transform;">
+                                <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+                                    src="https://www.canva.com/design/DAG4orv_63g/UkYmARNIL7ugDip-MbFHXQ/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+                                </iframe>
+                            </div>
+                        </a>
+                    </div>
+                        <div class="corpoTextoModal">
+                            <p> <strong> Competências e habilidades: </strong> C1 - H1, H2 e H4 </p>
+                            <p> <strong> Objetivo: </strong>Uma revista literária tem como objetivo promover a literatura, publicando contos, poesias e críticas. Ela visa divulgar novos talentos, estimular debates sobre temas culturais e sociais, fomentar a leitura e preservar a cultura literária. Além disso, busca criar uma comunidade que conecte escritores, leitores e críticos, enriquecendo o panorama literário.</p>
+                            <p> <strong> Comentário pessoal: </strong>Estou curtindo muito fazer essa revista literária porque adoro livros. Sei que isso vai me ajudar bastante na minha formação, e bons leitores se tornam bons escritores.</p>
+                        </div>
+                    <button id="fecharModal" class="fecharModal"> Voltar </button> <!-- esse é o botão para sair -->
+                    </div>
+                </div>                
+                
+                <!--Segunda Atividade-->
+                    <div class="cardLinguagens2" id="cardLinguagens">
+                            <button id="abrirModal1"> <!-- todas as informações da tela estão dentro desse botão, que ao clicar vai abrir um modal -->
+                                <img src="../../assents/imgs/atividadeEletroestatica.png" alt="Imagem" class="imagemCard"> <!-- ta chamando a imagem da atividade  -->
+                            </button>
+                    </div>
+                <div class="modal" id="modal1">  <!-- cria uma divisão só para o que vai dentro do modal -->
+                    <div class="conteudoModal1"> <!-- dentro dessa div aparece tudo no modal -->
+                        <div class="slideModalEspecial">
+                            <a href="https://drive.google.com/drive/folders/1639NemBi6ioWN4IVnF3-ei5wWedKTtQK?usp=drive_link"> 
+                                <div style="position: relative; width: 40%; height: 0; padding-top: 50%;
+                                padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+                                border-radius: 8px; will-change: transform;">
+                                    <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+                                        src="https://www.canva.com/design/DAGlLxDKlgE/5feV6f4lnNxMb-v4mKvOng/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+                                    </iframe>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="corpoTextoModal">
+                            <p> <strong> HABILIDADES E COMPETÊNCIAS: </strong> H29, H30 e H31 </p>
+                            <p> <strong> OBJETIVO: </strong> A proposta foi revisar os conceitos de eletrostática e corrente elétrica, entender como funcionam e aplicar leis e fórmulas em situações-problema. Além disso, a gente organizou tudo em um mapa mental pra ajudar no estudo e resolveu exercícios pra fixar o conteúdo e se preparar pras provas.  </p>
+                            <p> <strong> ASSUNTO: </strong> O assunto foi eletrostática e corrente elétrica — a gente viu sobre cargas elétricas, eletrização, força e campo elétrico, potencial elétrico e o funcionamento da corrente nos circuitos. </p>
+                            <p> <strong> CRÍTICA: </strong> Achei a aula bem legal porque ajudou a organizar tudo o que a gente já tinha visto de eletrostática, só que de um jeito mais claro e conectado. As atividades e o mapa mental facilitaram bastante pra entender e lembrar as fórmulas e conceitos. </p>
+                        </div>
+                        <button id="fecharModal1" class="fecharModal"> Voltar </button> <!-- esse é o botão para sair -->
+                    </div>
+                </div> 
+
+                <!--Terceira Atividade-->
+                    <div class="cardLinguagens3" id="cardLinguagens">
+                        <button id="abrirModal2">   <!-- todas as informações da tela estão dentro desse botão, que ao clicar vai abrir um modal -->
+                            <img src="../../assents/imgs/AtividadeEstequiometria.png" alt="Imagem">       <!-- ta chamando a imagem da atividade  -->
+                        </button>
+                    </div>
+                <div class="modal" id="modal2">  <!-- cria uma divisão só para o que vai dentro do modal -->
+                    <div class="conteudoModal2"> <!-- dentro dessa div aparece tudo no modal -->
+                        <div class="slideModal">
+                            <a href="https://www.canva.com/design/DAGhnkBN5OE/DmU3NXXqcJR4bq256WFyjA/edit?utm_content=DAGhnkBN5OE&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"> 
+                                <div style="position: relative; width: 80%; height: 0; padding-top: 45.1%;
+                                padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+                                border-radius: 8px; will-change: transform;">
+                                    <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+                                        src="https://www.canva.com/design/DAG4o1RLn20/-RWmenIW3Ne645SFnfEqFg/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+                                    </iframe>
+                                </div>
+                            </a> 
+                        </div>
+                        <div class="corpoTextoModal">
+                            <p> <strong> HABILIDADES E COMPETÊNCIAS: </strong> C2 - H7, H9 e H10  </p>
+                            <p> <strong> OBJETIVO:  </strong> Aplicar os conceitos fundamentais e estruturas procedimentais das Ciências da Natureza na explicação de fenômenos cotidianos, bem como dominar processos e práticas da  investigação científica. </p>
+                            <p> <strong> ASSUNTO:  </strong> O assunto foi sobre estequiometria, que é a parte da química que estuda as relações de quantidade entre os reagentes e produtos numa reação química.  </p>
+                            <p> <strong> CRÍTICA:  </strong> As atividades foram importantes pra fixar os cálculos e ver como a estequiometria aparece em coisas do nosso dia a dia e na indústria também. Acho que facilitou bastante enxergar a aplicação real dos conteúdos que às vezes parecem só conta no papel. </p>
+                        </div>
+                        <button id="fecharModal2" class="fecharModal"> Voltar </button> <!-- esse é o botão para sair -->
+                    </div>
+                </div>
+
+                <!--Quarta Atividade-->
+                    <div class="cardLinguagens4" id="cardLinguagens">
+                        <button id="abrirModal3">   <!-- todas as informações da tela estão dentro desse botão, que ao clicar vai abrir um modal -->
+                            <img src="../../assents/imgs/AtividadeBiomoleculas.png" alt="Imagem">       <!-- ta chamando a imagem da atividade  -->
+                        </button>
+                    </div>
+                <div class="modal" id="modal3">  <!-- cria uma divisão só para o que vai dentro do modal -->
+                    <div class="conteudoModal3"> <!-- dentro dessa div aparece tudo no modal -->
+                        <div class="slideModalEspecial2">
+                            <a href="https://docs.google.com/document/d/1u4koE1V09sF_oaOSxLOGEqwnhWDluM7ZpDmjJ4hC-yQ/edit?usp=sharing"> 
+                                <div style="position: relative; width: 60%; height: 0; padding-top: 60%;
+                                    padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+                                    border-radius: 8px; will-change: transform;">
+                                        <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+                                            src="https://www.canva.com/design/DAGfi87ACVs/WRyOdCxtkT2xsDo5RODstg/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+                                        </iframe>
+                                </div>
+                            </a> 
+                        </div>
+                        <div class="corpoTextoModal">
+                            <p> <strong> HABILIDADES E COMPETÊNCIAS: </strong> C4 - H23 & C5 - H24, H25 e H28 </p>
+                            <p> <strong> OBJETIVO: </strong> O objetivo da atividade é revisar e aprofundar o conhecimento sobre biomoléculas, como proteínas, vitaminas e ácidos nucleicos, explorando suas funções e importância para o corpo humano.  </p>
+                            <p> <strong> ASSUNTO: </strong> O assunto principal é sobre as biomoléculas, especificamente as proteínas, vitaminas e ácidos nucleicos, seus papéis no organismo e suas implicações para a saúde, além de como essas moléculas estão relacionadas às doenças.  </p>
+                            <p> <strong> CRÍTICA: </strong> Achei a atividade bem interessante. Ela me ajudou a entender melhor os diferentes tipos de poluição e como cada um afeta o meio ambiente e a nossa saúde.  </p>
+                        </div>
+                        <button id="fecharModal3" class="fecharModal"> Voltar </button> <!-- esse é o botão para sair -->
+                    </div>
+                </div>
+        </section>
+        <section class="(2)" id="trimestre2">
+            <div class="conteinerLinguagens">
+                <!--Primeira Atividade Segundo Trimestre-->
+                    <div class="cardLinguagens" id="cardLinguagens">   <!--  é o cardzinho que esta aparecendo na tela  -->
+                        <button  id="abrirModal4">   <!-- todas as informações da tela estão dentro desse botão, que ao clicar vai abrir um modal -->
+                            <img src="../../assents/imgs/atividadeRevistaSaude.png" alt="Imagem">       <!-- ta chamando a imagem da atividade  -->
+                        </button>
+                    </div>
+                <div class="modal" id="modal4">   <!-- cria uma divisão só para o que vai dentro do modal -->
+                    <div class="conteudoModal">  <!-- dentro dessa div aparece tudo no modal -->
+                        <div class="slideModalEspecial">
+                            <a href="https://www.canva.com/design/DAGv8pei2Sc/yBaflDGihPJlk6UNxnPKbw/edit?utm_content=DAGv8pei2Sc&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"> 
+                                <div style="position: relative; width: 40%; height: 0; padding-top: 57%;
+                                padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+                                border-radius: 8px; will-change: transform;">
+                                    <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+                                        src="https://www.canva.com/design/DAGv8pei2Sc/aE8vdCN9nMuEEGbXIblefw/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+                                    </iframe>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="corpoTextoModal">
+                            <p> <strong> HABILIDADES E COMPETÊNCIAS: </strong> C4 - H23 </p>
+                            <p> <strong> OBJETIVO: </strong> Fazer uma revista explicativa sobre doenças epidemiológicas e as diversas faces da saúde coletiva. </p>
+                            <p> <strong> ASSUNTO: </strong> Saúde pública: doenças epidemiológicas </p>
+                            <p> <strong> CRÍTICA: </strong> Gostei bastante de fazer essa atividade, em principal por que pesquisar sobre saúde em seus diversos aspectos é fundamental para compreendê-la melhor. </p>
+                        </div>
+                    <button id="fecharModal4" class="fecharModal"> Voltar </button> <!-- esse é o botão para sair -->
+                    </div>
+                </div>
+
+                <!--Segunda Atividade Segundo Trimestre-->
+                    <div class="cardLinguagens" id="cardLinguagens">
+                        <button id="abrirModal5">   <!-- todas as informações da tela estão dentro desse botão, que ao clicar vai abrir um modal -->
+                            <img src="../../assents/imgs/atividadeSistemaImu.png" alt="Imagem">       <!-- ta chamando a imagem da atividade  -->
+                        </button>
+                    </div>
+                <div class="modal" id="modal5">  <!-- cria uma divisão só para o que vai dentro do modal -->
+                    <div class="conteudoModal5"> <!-- dentro dessa div aparece tudo no modal -->
+                        <div class="slideModalEspecial3">
+                            <a href="https://www.canva.com/design/DAGqnANHlCs/sD7qmJh1ireO6J7KHZp_0A/edit?utm_content=DAGqnANHlCs&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"> 
+                                <div style="position: relative; width: 71%; height: 0; padding-top: 40.1%;
+                                padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+                                border-radius: 8px; will-change: transform;">
+                                    <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+                                        src="https://www.canva.com/design/DAGxOWrpxBI/ZWDejbBE9qpCRf54T7WENg/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+                                    </iframe>
+                                </div>
+                            </a> 
+                        </div>
+                        <div class="corpoTextoModal">
+                            <p> <strong> HABILIDADES E COMPETÊNCIAS: </strong> C4 - H23 </p>
+                            <p> <strong> OBJETIVO: </strong>  Nesta aula, vamos estudar o funcionamento do sistema imunológico humano, compreendendo seus principais componentes e mecanismos de defesa contra agentes infecciosos. Abordaremos os dois tipos de imunidade – inata e adaptativa – e exploraremos como o corpo reconhece, combate e “memoriza” invasores, como vírus e bactérias. </p>
+                            <p> <strong> ASSUNTO: </strong> vamos diferenciar imunização ativa (vacinas) da passiva (soros), destacando suas aplicações, eficácia e tempo de ação. Por fim, discutiremos os desafios relacionados à produção de vacinas para vírus com alta variabilidade genética, como o HIV e o vírus da gripe, e a importância da vacinação em campanhas de saúde pública. </p>
+                            <p> <strong> CRÍTICA: </strong> Foi interessante de fazer apesar de ser meio massante visto que é um conteúdo que já vimos várias vezes antes. Apesar disso foi informativo e útil para revisar os conceitos. </p>
+                        </div>
+                        <button id="fecharModal5" class="fecharModal"> Voltar </button> <!-- esse é o botão para sair -->
+                    </div>
+                </div>    
+                
+                <!--Terceira Atividade Segundo Trimestre-->
+                    <div class="cardLinguagens" id="cardLinguagens">
+                        <button id="abrirModal6">   <!-- todas as informações da tela estão dentro desse botão, que ao clicar vai abrir um modal -->
+                            <img src="../../assents/imgs/AtividadeGlossario.png" alt="Imagem">       <!-- ta chamando a imagem da atividade  -->
+                        </button>
+                    </div>
+
+                <div class="modal" id="modal6">  <!-- cria uma divisão só para o que vai dentro do modal -->
+                    <div class="conteudoModal6"> <!-- dentro dessa div aparece tudo no modal -->
+                        <div class="slideModalEspecial">
+                            <a href="https://www.canva.com/design/DAGr7DCs6V0/BVT4E0Ker7vhwOetEvev1Q/edit?utm_content=DAGr7DCs6V0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"> 
+                                <div style="position: relative; width: 40%; height: 0; padding-top: 50%;
+                                padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+                                border-radius: 8px; will-change: transform;">
+                                    <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+                                        src="https://www.canva.com/design/DAGr7DCs6V0/xvtuWLV39rp4bL4CbnW8Cw/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+                                    </iframe>
+                                </div>
+                            </a> 
+                        </div>
+                        <div class="corpoTextoModal">
+                            <p> <strong> HABILIDADES E COMPETÊNCIAS: </strong> C2: H6, H7 E H9 </p>
+                            <p> <strong> OBJETIVO: </strong> Promover uma aprendizagem ativa, interdisciplinar e integrada entre Física e Química por meio da criação de um glossário técnico ilustrado e matemático, com os principais conceitos de eletroquímica e eletricidade, destacando definições, aplicações cotidianas, fórmulas matemáticas relevantes e ilustrações explicativas. </p>
+                            <p> <strong> ASSUNTO: </strong> Eletroquímica </p>
+                            <p> <strong> CRÍTICA: </strong> Gostei de fazer essa atividade principalmente por que entender os conceitos antes de qualquer coisa é muito importante.  </p>
+                        </div>
+                        <button id="fecharModal6" class="fecharModal"> Voltar </button> <!-- esse é o botão para sair -->
+                    </div>
+                </div>
+            </div>
+        </section>     
+        <section class="(3)" id="trimestre3">
+            <div class="conteinerLinguagens">
+                <!--Primeira Atividade Terceiro Trimestre Destilação-->
+                    <div class="cardLinguagens" id="cardLinguagens">   <!--  é o cardzinho que esta aparecendo na tela  -->
+                        <button  id="abrirModal7">   <!-- todas as informações da tela estão dentro desse botão, que ao clicar vai abrir um modal -->
+                            <img src="../../assents/imgs/atividadeDestilacao.png" alt="Imagem">       <!-- ta chamando a imagem da atividade  -->
+                        </button>
+                    </div>
+                <div class="modal" id="modal7">   <!-- cria uma divisão só para o que vai dentro do modal -->
+                    <div class="conteudoModal">  <!-- dentro dessa div aparece tudo no modal -->
+                        <div class="slideModalEspecial3">
+                            <div style="position: relative; width: 71%; height: 0; padding-top: 40%;
+                            padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+                            border-radius: 8px; will-change: transform;">
+                                <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+                                    src="https://www.canva.com/design/DAG4fA2McHg/xaVFdOuv7EjBI1n-9m7tdQ/watch?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+                                </iframe>
+                            </div>
+                        </div>
+                        <div class="corpoTextoModal">
+                            <p> <strong> HABILIDADES E COMPETÊNCIAS: </strong> C5 - H24, H25, H26, H27, H28 </p>
+                            <p> <strong> OBJETIVO: </strong> Melhore e aumente esse texto: O objetivo da atividade é visualizar como acontece a destilação de oleos essenciais </p>
+                            <p> <strong> CRÍTICA: </strong> A participação na atividade de destilação de óleos essenciais foi bastante esclarecedora, permitindo a visualização prática do processo. Embora a experiência tenha sido boa, a etapa de gravação do vídeo apresentou o maior desafio.</p>
+                        </div>
+                    <button id="fecharModal7" class="fecharModal"> Voltar </button> <!-- esse é o botão para sair -->
+                    </div>
+                </div>
+
+                <!--Segunda Atividade Terceiro Trimestre Padlet-->
+                    <div class="cardLinguagens" id="cardLinguagens">   <!--  é o cardzinho que esta aparecendo na tela  -->
+                        <button  id="abrirModal8">   <!-- todas as informações da tela estão dentro desse botão, que ao clicar vai abrir um modal -->
+                            <img src="../../assents/imgs/atividadeComentarioPadlet.png" alt="Imagem">       <!-- ta chamando a imagem da atividade  -->
+                        </button>
+                    </div>
+                <div class="modal" id="modal8">   <!-- cria uma divisão só para o que vai dentro do modal -->
+                    <div class="conteudoModal">  <!-- dentro dessa div aparece tudo no modal -->
+                        <div class="slideModalEspecial3">
+                            <img src="../../assents/imgs/padlet.png" alt="Imagem" class="imagemNota"> <!-- ta chamando a imagem da atividade  -->
+                        </div>
+                        <div class="corpoTextoModal">
+                            <p> <strong> HABILIDADES E COMPETÊNCIAS: </strong> C5 - H24, H25, H26, H27, H28</p>
+                            <p> <strong> OBJETIVO: </strong> A tarefa é que os grupos pesquisem e apresentem os princípios científicos e a aplicação industrial (incluindo a extração de óleos) de um método de separação específico (ex.: Destilação ou Cromatografia).</p>
+                            <p> <strong> CRÍTICA: </strong> Achei essa atividade interessante de se fazer, até por que a pesquisa e organização de ideias são essenciais para entender o assunto.</p>
+                        </div>
+                    <button id="fecharModal8" class="fecharModal"> Voltar </button> <!-- esse é o botão para sair -->
+                    </div>
+                </div>
+
+                <!--Terceira Atividade Terceiro Trimestre Energia-->
+                    <div class="cardLinguagens" id="cardLinguagens">   <!--  é o cardzinho que esta aparecendo na tela  -->
+                        <button  id="abrirModal9">   <!-- todas as informações da tela estão dentro desse botão, que ao clicar vai abrir um modal -->
+                            <img src="../../assents/imgs/atividadeEnergia.png" alt="Imagem">       <!-- ta chamando a imagem da atividade  -->
+                        </button>
+                    </div>
+                <div class="modal" id="modal9">   <!-- cria uma divisão só para o que vai dentro do modal -->
+                    <div class="conteudoModal">  <!-- dentro dessa div aparece tudo no modal -->
+                        <div class="slideModalEspecial3">
+                            <div style="position: relative; width: 71%; height: 0; padding-top: 40%;
+                            padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+                            border-radius: 8px; will-change: transform;">
+                                <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+                                    src="https://www.canva.com/design/DAGzzP95CC0/sF23etOnlgXc_b1klzUe3g/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+                                </iframe>
+                            </div>
+                        </div>
+                        <div class="corpoTextoModal">
+                            <p> <strong> HABILIDADES E COMPETÊNCIAS: </strong> C1 & C2 - H1, H2, H5 e H9</p>
+                            <p> <strong> OBJETIVO: </strong> O objetivo é analisar a evolução da interação humana com energia e tecnologia em três fases (histórica, presente e futura), exigindo pesquisa, análise crítica e propostas de inovação sustentável.</p>
+                            <p> <strong> CRÍTICA: </strong> A atividade foi muito enriquecedora, fazendo-me refletir sobre a profunda transformação que as tecnologias trouxeram desde o passado e o imenso potencial que elas ainda reservam para moldar o nosso futuro.</p>
+                        </div>
+                    <button id="fecharModal9" class="fecharModal"> Voltar </button> <!-- esse é o botão para sair -->
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        
+        
+    </div>
+    <script src="natureza.js"></script>
+</body>
+</html>
